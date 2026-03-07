@@ -1,18 +1,10 @@
-const express = require("express")
-const cors = require("cors")
 require("dotenv").config()
-const connectDB = require("./config/db")
 
-const app = express()
+const app = require("./src/app")
+const connectDB = require("./src/config/db")
 
-app.use(cors())
-app.use(express.json())
-
-// connectDB()// still not working
-
-app.get("/", (req, res) => {
-  res.send("Backend Running")
-})
+// Connect Database
+connectDB()
 
 const PORT = process.env.PORT || 5000
 
