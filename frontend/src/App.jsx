@@ -10,6 +10,8 @@ import { Register } from "./pages/Register"
 import { Job } from "./components/Job"
 import { Login } from "./pages/Login"
 import  StudentDashboard  from "./pages/student/StudentDashboard"
+import { AdminLogin } from "./pages/admin/AdminLogin"
+import { AdminDashboard } from "./pages/admin/AdminDashboard"
 
 
 
@@ -29,6 +31,15 @@ function App() {
 
         <Route path="/student/dashboard" element={<StudentDashboard />} />
 
+
+        {/* Admin Routes */}
+        <Route path="/soumaditya/rakibul/admin/login" element={<AdminLogin />} />
+        <Route path="/soumaditya/rakibul/admin/dashboard" element={<AdminDashboard />} />
+
+
+        {/* page not found route */}
+        <Route path="*" element={<h1 className="text-4xl font-bold text-center mt-20">404 - Page Not Found</h1>} />
+      
       </Routes>
     </BrowserRouter>
   )

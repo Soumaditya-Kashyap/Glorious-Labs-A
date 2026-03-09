@@ -1,6 +1,11 @@
 import React from "react";
 import bgImage from "../assets/tepm.png";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+import { Server } from "lucide-react";
+import { Service } from "../components/Service";  
+import { About } from "../components/About";
+import { Contact } from "../components/Contact";
 
 const Home = () => {
   return (
@@ -60,28 +65,21 @@ const Home = () => {
       </section>
 
       {/* Service Section */}
-      <section
-        id="service"
-        className="h-screen flex items-center justify-center bg-gray-900"
-      >
-        <h2 className="text-4xl font-bold">Our Services</h2>
-      </section>
+     <section id="service">
+  <Service />
+</section>
 
       {/* About Section */}
-      <section
-        id="about"
-        className="h-screen flex items-center justify-center bg-gray-800"
-      >
-        <h2 className="text-4xl font-bold">About Us</h2>
+      <section id="about">
+        <About />
       </section>
 
       {/* Contact Section */}
-      <section
-        id="contact"
-        className="h-screen flex items-center justify-center bg-gray-700"
-      >
-        <h2 className="text-4xl font-bold">Contact Us</h2>
-      </section>
+     <section id="contact">
+      <Contact />
+     </section>
+
+      <Footer />
 
     </div>
   );
