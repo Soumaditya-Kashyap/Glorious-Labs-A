@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import { About } from "./components/About"
 import { Contact } from "./components/Contact"
-import { Internship } from "./components/Internship"
 import { Service } from "./components/Service"
 import { Register } from "./pages/Register"
 import { Job } from "./components/Job"
@@ -12,6 +11,10 @@ import { Login } from "./pages/Login"
 import  StudentDashboard  from "./pages/student/StudentDashboard"
 import { AdminLogin } from "./pages/admin/AdminLogin"
 import { AdminDashboard } from "./pages/admin/AdminDashboard"
+import { Profile } from "./components/studentComponents/Profile"
+import { Progress } from "./components/studentComponents/Progress"
+import { Report } from "./components/studentComponents/Report"
+import {MyInternship} from "./components/studentComponents/MyInternship"
 
 
 
@@ -22,7 +25,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/internship" element={<Internship />} />
         <Route path="/service" element={<Service />} />
         <Route path="/job" element={<Job />} />
 
@@ -30,6 +32,10 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         <Route path="/student/dashboard" element={<StudentDashboard />} />
+        <Route path="/student/profile" element={<Profile />} />
+        <Route path="/student/internships" element={<MyInternship />} />
+        <Route path="/student/reports" element={<Report />} />
+        <Route path="/student/progress" element={<Progress />} />
 
 
         {/* Admin Routes */}
