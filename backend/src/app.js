@@ -12,4 +12,8 @@ app.get("/", (req, res) => {
   res.send("Backend Running")
 })
 
+
+app.use("/api/users", require("./routes/userRoutes"))
+
+
 module.exports = app

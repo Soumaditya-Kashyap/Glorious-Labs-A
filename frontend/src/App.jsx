@@ -34,7 +34,7 @@ function App() {
 
         {/* Admin Routes */}
         <Route path="/soumaditya/rakibul/admin/login" element={<AdminLogin />} />
-        <Route path="/soumaditya/rakibul/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
 
 
         {/* page not found route */}
