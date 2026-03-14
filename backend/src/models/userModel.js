@@ -28,11 +28,27 @@ const userSchema = new mongoose.Schema(
     enum: ["student", "admin"],
     default: "student"
   },
+  // students setupProfile 
+  phoneNumber: {
+    type: String
+  },
+  currentCity: {
+    type: String
+  },
+  institudeName: {
+    type: String
+  },
+  degree: {
+    type: String
+  },
+  fieldOfStudy: {
+    type: String
+  },
+  graduationYear: { 
+    type: String
+  },
 
-  profileImage: {
-    type: String,
-    default: ""
-  }
+   
 
 }, { timestamps: true })
 

@@ -54,9 +54,33 @@ export const useAuth = () => {
 
   }
 
+  const me= async (token) => {
+
+    try {
+
+      setLoading(true)
+      setError(null)
+
+      const res = await getCurrentUser(token)
+
+      return res.data
+
+    } catch (err) {
+
+      setError(err.response?.data?.message || "Fetch user failed")
+
+    } finally {
+
+      setLoading(false)
+
+    }
+
+  }
+
   return {
     login,
     register,
+    me,
     loading,
     error
   }

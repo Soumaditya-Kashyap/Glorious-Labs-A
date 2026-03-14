@@ -15,6 +15,7 @@ import { Profile } from "./components/studentComponents/Profile"
 import { Progress } from "./components/studentComponents/Progress"
 import { Report } from "./components/studentComponents/Report"
 import {MyInternship} from "./components/studentComponents/MyInternship"
+import { CreateInternShip } from "./components/adminComponents/CreateInternShip"
 
 
 
@@ -41,6 +42,7 @@ function App() {
         {/* Admin Routes */}
         <Route path="/soumaditya/rakibul/admin/login" element={<AdminLogin />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/create-internship" element={<CreateInternShip />} />
 
 
         {/* page not found route */}

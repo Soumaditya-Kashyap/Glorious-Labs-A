@@ -9,9 +9,9 @@ const StudentDashboard = () => {
       <Navbar />
       <InternshipCard />
 
-    <>
-    <Footer />
-    </>
+
+      <Footer />
+
     </div>
   )
 }

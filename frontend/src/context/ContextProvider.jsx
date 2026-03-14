@@ -1,4 +1,5 @@
 import { createContext, useState } from "react"
+import { InternshipProvider } from "./InternshipContext"
 
 export const AuthContext = createContext()
 
@@ -17,8 +18,16 @@ export const ContextProvider = ({ children }) => {
   }
 
   return (
+
     <AuthContext.Provider value={{ user, login, logout }}>
-      {children}
+
+      <InternshipProvider>
+
+        {children}
+
+      </InternshipProvider>
+
     </AuthContext.Provider>
+
   )
 }

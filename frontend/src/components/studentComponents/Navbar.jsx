@@ -41,6 +41,11 @@ export const Navbar = () => {
               Progress
             </Link>
           </li>
+          <li>
+            <Link to="/student/quick-support" className="hover:text-white">
+              Quick Support
+            </Link>
+          </li>
 
         </ul>
 
